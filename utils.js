@@ -4,8 +4,8 @@ function forHumans ( seconds ) {
         [Math.floor(seconds / 31536000), 'years'],
         [Math.floor((seconds % 31536000) / 86400), 'days'],
         [Math.floor(((seconds % 31536000) % 86400) / 3600), 'hours'],
-        [Math.floor((((seconds % 31536000) % 86400) % 3600) / 60), 'minutes'],
-        [(((seconds % 31536000) % 86400) % 3600) % 60, 'seconds'],
+        [Math.floor((((seconds % 31536000) % 86400) % 3600) / 60), 'mins'],
+        [(((seconds % 31536000) % 86400) % 3600) % 60, 'secs'],
     ];
     var returntext = '';
 
