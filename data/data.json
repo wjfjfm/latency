@@ -368,5 +368,21 @@
         "date" : "2016-11-16",
         "note" : "",
         "detail" : [ "http://ithare.com/infographics-operation-costs-in-cpu-clock-cycles/"]
+   },
+   {
+        "operation" : "Redis: set value by key",
+        "time" : "100000",
+        "tags" : ["redis"],
+        "date" : "2022-04-23",
+        "note" : "",
+        "detail" : [ ""]
+   },
+   {
+        "operation" : "Redis: get value by key",
+        "time" : "100000",
+        "tags" : ["redis"],
+        "date" : "2022-04-23",
+        "note" : "same as set",
+        "detail" : [ ""]
    }
 ]}
