@@ -1,12 +1,22 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchbuilder/1.3.2/css/searchBuilder.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchbuilder/1.3.2/css/searchBuilder.dataTables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/searchbuilder/1.3.2/js/dataTables.searchBuilder.min.js"> </script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.2/js/dataTables.dateTime.min.js"> </script>
+
+    <link href="https://nightly.datatables.net/searchpanes/css/searchPanes.dataTables.css" rel="stylesheet" type="text/css" />
+    <script src="https://nightly.datatables.net/searchpanes/js/dataTables.searchPanes.js?ktfkuyvlghjkhj"></script>
+
+    <link href="https://nightly.datatables.net/select/css/select.dataTables.css" rel="stylesheet" type="text/css" />
+    <script src="https://nightly.datatables.net/select/js/dataTables.select.js"></script>
+
     <script type="text/javascript" src="./utils.js"> </script>
 <style>
     .rowBackground{
@@ -40,43 +50,7 @@ var searchBuilderPredefine = {
             data: 'date',
             condition: '>',
             value: ['2000-1-1']
-        },
-        {
-            criteria: [
-                {
-                    data: 'tags',
-                    condition: 'contains',
-                    value: ['default']
-
-                },
-                {
-                    data: 'tags',
-                    condition: 'contains',
-                    value: ['light']
-
-                },
-                {
-                    data: 'tags',
-                    condition: 'contains',
-                    value: ['CPU']
-
-                },
-                {
-                    data: 'tags',
-                    condition: 'contains',
-                    value: ['language']
-
-                },
-                {
-                    data: 'operation',
-                    condition: 'contains',
-                    value: ['Linux']
-                }
-
-            ],
-            logic: 'OR'
         }
-
     ],
     logic: 'AND'
 };
@@ -121,14 +95,33 @@ $(document).ready(function() {
             },
             { 
                 "data": "tags",
-                "visible": false
+                "visible": false,
+                "searchPanes": {
+                    orthogonal: 'sp'
+                }
              },
         ],
+        searchPanes: {
+            layout: 'columns-3',
+            columns: [7],
+            // initCollapsed: true,
+            emptyMessage: "</i></b>EMPTY</b></i>",
+            // preSelect: [{
+            //     column: 7,
+            //     rows: ['default', 'light', 'CPU', 'language', 'Linux', 'database']
+            // }],
+            dtOpts:{
+                // searching: false,
+                select:{
+                    style: 'multi'
+                }
+            }
+        },
         order: [[1, "asc"]],
         searchBuilder:{
             preDefined: searchBuilderPredefine
         },
-        dom: 'Qlfrtip',
+        dom: 'PQlfrtip',
         lengthMenu : [[-1, 10, 25, 50, 100], ["All", 10, 25, 50, 100]],
     });
     

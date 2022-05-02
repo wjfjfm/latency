@@ -3,7 +3,7 @@
     {
         "operation" : "L1 cache reference",
         "time" : "0.5",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -11,7 +11,7 @@
    {
         "operation" : "Branch mispredict",
         "time" : "5",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -19,7 +19,7 @@
    {
         "operation" : "L2 cache reference",
         "time" : "7",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "14x L1 cache",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -27,7 +27,7 @@
    {
         "operation" : "Mutex lock/unlock",
         "time" : "25",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -35,7 +35,7 @@
    {
         "operation" : "Main memory reference",
         "time" : "100",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "20x L2 cache, 200x L1 cache",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -43,7 +43,7 @@
    {
         "operation" : "Compress 1K bytes with Zippy",
         "time" : "3000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -51,7 +51,7 @@
    {
         "operation" : "Send 1K bytes over 1 Gbps network",
         "time" : "10000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -59,7 +59,7 @@
    {
         "operation" : "Read 4K randomly from SSD*",
         "time" : "150000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "~1GB/sec SSD",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -67,7 +67,7 @@
    {
         "operation" : "Read 1 MB sequentially from memory",
         "time" : "250000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -75,7 +75,7 @@
    {
         "operation" : "Round trip within same datacenter",
         "time" : "500000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -83,7 +83,7 @@
    {
         "operation" : "Read 1 MB sequentially from SSD*",
         "time" : "1000000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "~1GB/sec SSD, 4X memory",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -91,7 +91,7 @@
    {
         "operation" : "Disk seek",
         "time" : "10000000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "20x datacenter roundtrip",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -99,7 +99,7 @@
    {
         "operation" : "Read 1 MB sequentially from disk",
         "time" : "20000000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "80x memory, 20X SSD",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
@@ -107,7 +107,7 @@
    {
         "operation" : "Send packet CA->Netherlands->CA",
         "time" : "150000000",
-        "tags" : ["default", "Jeff Dean"],
+        "tags" : ["Jeff Dean"],
         "date" : "2012-01-01",
         "note" : "",
         "detail" : "Numbers Everyone Should Know from Jeff Dean"
