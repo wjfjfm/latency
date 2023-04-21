@@ -400,5 +400,13 @@
         "date" : "2023-04-21",
         "note" : "",
         "detail" : ["From polarswitch, 100-200us mostly, 120 as average"]
+   },
+   {
+        "operation" : "PolarDB: Replication delay Primary->Replica",
+        "time" : "1000000000",
+        "tags" : ["PolarDB"],
+        "date" : "2023-04-21",
+        "note" : "",
+        "detail" : ["Less than 1ms normally "]
    }
 ]}
